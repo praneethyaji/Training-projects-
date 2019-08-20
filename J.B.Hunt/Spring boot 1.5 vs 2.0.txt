@@ -1,0 +1,67 @@
+1.5
+
+**dependencies--
+
+	--requires java 6 version and above ,,doesnot support java 9+
+	--Maven 3.2++
+		
+	--gradle 3.4++
+	--Tomcat 7++
+	--Spring 4.3.10++
+	-tomcat 7 if servlet 3.0+ & java 6+
+	-tomcat 8 if servlet 3.1+ & java 7+
+**Autoconfiguration--
+**security for actuator end points
+are by defaults i.e defines own security model different than one used by our application
+
+**using a static getter and setter pair for binding on static properties is possible
+
+
+
+
+
+
+
+
+2.0
+
+**dependencies--
+ 	--requires java 8++
+	Java 10 is supported as of Spring Boot 2.0.1.RELEASE.
+	Java 11 is supported as of Spring Boot 2.1.0.M2.
+	-Maven 3.2++
+--spring 5+
+	--tomcat--8.5++
+	-gradle 3.4++
+
+**Autoconfiguration--
+   --supports reactive module like  WebFlux
+**Actuator--most of the end points are disabled  -actuator,auditevents,autoconfig(conditions(2)),,sensitive,id,docs,,,health,trace(/httptrace)
+	-predefined end points are not configurable
+
+**remote debugging  support through http is removed @ConfigurationProperties object is annotated with @Validated
+--
+**findOne() method has been removed
+**actuator end pointshas been moved under \application\health from \health
+
+** WebMvcConfigurerAdapter to disable
+CORS in the multiplication, gamification, and gateway microservices depriciated WebMvcConfigurer can be used
+
+	**The plugin configuration attributes that are exposed as properties now all start with a spring-boot prefix
+
+**Servlet-specific server properties
+	A number of server.* properties that are Servlet-specific have moved to server.servlet:
+
+**The requestFactory(ClientHttpRequestFactory) method has been replaced by a new requestFactory(Supplier<ClientHttpRequestFactory> requestFactorySupplier) method in restTemplate interface.
+
+
+**removed
+	--CRaSH support
+
+	Auto-configuration and dependency management for Spring Mobile.
+
+	`Auto-configuration and dependency management for Spring Social
+
+	Dependency management for commons-digester.
+
+	Test support in the CLI (i.e. spring test)

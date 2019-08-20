@@ -1,0 +1,9 @@
+***Properties in Spring :
+->Using @PropertySource("classpath:name of file") along with @Configuration annotation.
+->Registering properties in XML file--<context:property-placeholder location="classpath:name of the file with extension>
+here the file must be in src/main/resources so that is available on classpath at runtime 
+-->injecting  properties
+     @Value("${value to be assigned or variable name of property}")
+     private string a;
+
+**with spring boot:
